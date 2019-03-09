@@ -1,1 +1,1 @@
-web: q1.js
+web: node q1.js
