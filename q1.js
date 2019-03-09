@@ -4,7 +4,7 @@ const server      = express();
 
 server.use(bodyParser.json());
 
-server.set('port', process.env.PORT || 3000);
+server.set('port', process.env.PORT || 8080);
 
 server.get('/', (request, response) => {
     response.send('Welcome to Dapp1 Exam');
@@ -17,4 +17,4 @@ server.post('/messageParrot', (request, response) => {
 });
 
 
-server.listen(3000, () => { console.log('Node server created at port 3000') });
+server.listen(8080, () => { console.log('Node server created at port 3000') });
